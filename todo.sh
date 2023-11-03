@@ -15,4 +15,13 @@ while true; do
         read task
         echo "$task" >> tasks.txt
         echo "La tâche a été ajoutée."
+
+#suppression tâche via sed qui permet d'éditer du txt
+    elif [ "$choix" -eq 2 ]; then
+        echo "Liste des tâches :"
+        cat -n tasks.txt
+        echo -n "Quelle tâche supprimer ? "
+        read numero_task
+        sed -i "${numero_task}d" tasks.txt
+        echo "Tâche supprimée."
 done
