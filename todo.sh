@@ -22,7 +22,7 @@ while true; do
     elif [ "$choix" -eq 2 ]; then
         echo "Liste des tâches :"
         cat -n tasks.txt # "-n" pour le numérotage des lignes
-        echo -n "Quelle tâche supprimer ? "
+        echo "Quelle tâche supprimer ? "
         read numero_task
         sed -i "${numero_task}d" tasks.txt #option -i pour renseigner que c'est un fichier qui sera modif
         # et "d" permet d'indiquer la ligne à supprimer
