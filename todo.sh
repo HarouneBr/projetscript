@@ -31,7 +31,8 @@ while true; do
         echo "Liste des tâches à faire :"
         cat -n tasks.txt #"-n" pour le numérotage des lignes
 
-
+    elif ["choix" -eq 4] ; then
+        break
 
 
 
