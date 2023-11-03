@@ -13,7 +13,7 @@ while true; do
 
 #ajout tâche
     if [ "$choix" -eq 1 ]; then
-        echo -n "Décris la tâche : "
+        echo "Décris la tâche : "
         read task
         echo "$task" >> tasks.txt
         echo "La tâche a été ajoutée."
