@@ -23,5 +23,7 @@ while true; do
         echo -n "Quelle tâche supprimer ? "
         read numero_task
         sed -i "${numero_task}d" tasks.txt
-        echo "Tâche supprimée."
+        echo "Tâche supprimée"
+    fi
+
 done
