@@ -7,4 +7,12 @@ while true; do
     echo "2 - Supprime une tâche"
     echo "3 - Affiche les tâches"
     echo -n "Choisis la prochaine action : "
-    done
+
+    read choix
+#ajout tâche
+    if [ "$choix" -eq 1 ]; then
+        echo -n "Décris la tâche : "
+        read task
+        echo "$task" >> tasks.txt
+        echo "La tâche a été ajoutée."
+done
