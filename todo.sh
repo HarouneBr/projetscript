@@ -6,6 +6,8 @@ while true; do
     echo "1 - Ajoute une tâche"
     echo "2 - Supprime une tâche"
     echo "3 - Affiche les tâches"
+    echo "4 - Quitter"
+    echo "5 - Effacer la to do list"
     echo "Choisis la prochaine action : "
     read choix
 
@@ -34,7 +36,8 @@ while true; do
     elif ["choix" -eq 4] ; then
         break
 
-
+    elif ["choix" -eq 5] ; then
+        break #temporaire
 
 
 
